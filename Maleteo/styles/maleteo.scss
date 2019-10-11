@@ -1,0 +1,355 @@
+@import "variables.scss";
+@import "grid.scss";
+@import "types.scss";
+//-------------------------------------Body--------------------------------------------------------------------------------//
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: $text;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 31px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.textLarge {
+    font-size: $textLarge;
+    line-height: $texLargeLh;
+}
+
+.textSmall {
+    font-size: $textSmall;
+    line-height: $texLargeLh;
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+//-------------------------Global container----------------------------------//
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 2em;
+    height: 10%;
+}
+
+//-------------------------Logo----------------------------------//
+.logo {
+    margin-top: 1.5em;
+    padding: 1.5em 0em;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+//-------------------------Main image----------------------------------//
+.slide {
+    height: 30em;
+    background: url(../Images/jumbo@2x.jpg);
+    background-size: cover;
+}
+
+.containerTop {
+    height: 100%;
+    background: $transparency2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleTop {
+    color: $white;
+    margin: 1.8em;
+    padding: 0.5em;
+}
+
+//-------------------------buttons in the main imagen----------------------------------//
+.buttonsApp {
+    display: inline-block;
+    padding: 10%;
+    padding-top: 2%;
+    justify-content: center
+}
+
+.buttonApp {
+    padding: 8px;
+    padding-top: 1.5%;
+    float: left;
+}
+
+.boxSteps {
+    margin: 1.5em;
+}
+
+.steps {
+    text-align: center;
+    margin: 2em;
+}
+
+.frame {
+    width: 100%;
+}
+
+.functions {
+    margin-right: 2em;
+    text-align: center;
+    list-style: none;
+}
+
+//-------------------------Icon ballooms----------------------------------//
+.yellowCircle {
+    display: inline-block;
+}
+
+.circle {
+    color: white;
+    background: -webkit-gradient(linear, left bottom, left top, from(#f09000), to(#ffce32));
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 1em, 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.num {
+    margin: 1em 1.2em;
+    text-align: center;
+}
+
+.textcol {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 2em;
+}
+
+.titleSteps {
+    margin-bottom: 1em;
+}
+
+@media all and (min-width: 1200px) {
+    .button {
+        display: block;
+        margin: 0.5em auto;
+    }
+    .containerTop {
+        width: 50%;
+    }
+    .boxes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .drawer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .yellowCircle {
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+}
+
+//-------------------------Iphone-------------------------//
+.smartphone {
+    display: block;
+    margin: auto;
+}
+
+.titleDemo {
+    margin: 1em;
+}
+
+//-------------------------Iphone / Formulario----------------------------------//
+.form {
+    border: 2px solid $gray1;
+    border-radius: 1%;
+    padding: 3%;
+}
+
+.message {
+    display: none;
+}
+
+.enviadomsg {
+    display: block;
+    height: 100%;
+    border: 1px solid $valid;
+    padding: 1em;
+}
+
+.enviadoform {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-left: 2em;
+    margin-bottom: 0.8em;
+}
+
+.littlebox {
+    display: block;
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    background-color: $white;
+    border: 1px solid $gray1;
+    height: 2em;
+    width: 80%;
+}
+
+.cities {
+    margin-left: 2em;
+    background-color: $white;
+    border: 1px solid $gray1;
+    height: 3em;
+    width: 83.5%;
+}
+
+.boxCheck {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomCheck {
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: 1.8em;
+    margin-right: 0.5em;
+}
+
+.check {
+    border: 7px solid $gray1;
+    cursor: pointer;
+    border-radius: 4%;
+}
+
+.bottomSend {
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1.8em;
+    border-radius: 2px;
+    border-style: solid;
+}
+
+.sending {
+    background: $primary2;
+    border-style: none;
+    color: $white;
+    padding: 0.7em;
+    width: 6em;
+}
+
+@media screen and (max-width:667px) {
+    .mobile {
+        width: 50%;
+        text-align: center;
+    }
+    .smartphone {
+        display: none;
+    }
+    .drawer {
+        margin-top: 2.5em;
+        display: flex;
+    }
+    .textcol {
+        margin-left: 2em;
+    }
+    .formulario {
+        margin-left: 50px;
+    }
+}
+
+//----------------------------Guardians' opinions--------------------------------------------//
+.box {
+    margin: 1em 0 2em 0;
+}
+
+.titleOpinion {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.textOpinion {
+    border: 2px solid $gray1;
+    text-align: left;
+    padding: 1em;
+}
+
+.firma {
+    margin-top: 0.8em;
+}
+
+@media screen and (min-width:1200px) {
+    .boxes {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+//-----------------------------------------Google maps--------------------------------------------//
+.titleMap {
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.map {
+    text-align: center;
+    width: 100%;
+    height: 35em;
+    margin-bottom: 4em;
+}
+
+//--------------------------Footer-------------------------//
+footer {
+    background-color: $gray6;
+    width: 100%;
+}
+
+.logFoot {
+    text-align: center;
+}
+
+.txt {
+    color: $white;
+    text-align: center;
+}
+
+.iconHeart {
+    height: 20px;
+    width: 20px;
+}

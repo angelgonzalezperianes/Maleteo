@@ -1,0 +1,57 @@
+$font-size-base:16px;
+$font-weight-base: 400;
+$font-weight-bold: 500;
+$lineheigth:1px;
+$letra: 'Catamaran',
+sans-serif;
+.heading1,
+.heading2,
+.heading3 {
+    font-weight: $font-weight-bold;
+}
+
+.heading1 {
+    font-size: 3*$font-size-base;
+    line-height: $lineheigth * 56;
+}
+
+.heading2 {
+    font-size: 2.4375*$font-size-base;
+    line-height: $lineheigth * 47;
+}
+
+.heading3 {
+    font-size: 1.9375*$font-size-base;
+    line-height: $lineheigth * 26;
+}
+
+.heading4 {
+    font-size: 1.9375*$font-size-base;
+    line-height: $lineheigth * 32;
+}
+
+.text-large,
+.text,
+.text-smal-bold,
+.text-small {
+    font-weight: $font-weight-base;
+}
+
+.txt-large {
+    font-size: 1.25*$font-size-base;
+    line-height: $lineheigth * 28;
+}
+
+.text {
+    font-size: $font-size-base;
+}
+
+.text-smal-bold {
+    font-size: 0.8125*$font-size-base;
+    line-height: $lineheigth * 20;
+}
+
+.text-small {
+    font-size: 0.8125*$font-size-base;
+    line-height: $lineheigth * 20;
+}
